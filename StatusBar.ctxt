@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=StatusBar
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ HealthBar\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=owner
+comment1.target=StatusBar(Chicken)
+comment2.params=owner\ max\ decay\ x\ y\ c
+comment2.target=StatusBar(Chicken,\ int,\ double,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ HealthBar\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=4
