@@ -120,5 +120,23 @@ public class Chicken extends Actor
         
     }
     
+    public void hit(){
+        health.value --;
+        happiness.value -=0.5;
+    }
     
+    public void feed(){
+        hunger.value++;
+        if(hunger.value > hunger.maxValue){
+            health.value --;
+            happiness.value-=0.5;
+        }
+    }
+    
+    public void play(){
+        happiness.value++;
+        if (happiness.value>happiness.maxValue){
+            happiness.value=happiness.maxValue;
+        }
+    }
 }

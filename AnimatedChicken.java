@@ -29,6 +29,7 @@ public class AnimatedChicken extends Chicken
      */
     public void act()
     {
-        // Add your action code here.
+        super.act();
+        
     }
 }

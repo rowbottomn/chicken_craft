@@ -25,9 +25,12 @@ public class MouseCursor extends Actor
     public void act()
     {
         info = Greenfoot.getMouseInfo();
-        if (info != null){
-            setLocation(info.getX(), info.getY());
+        if (info == null){
+            return;
+            
         }
+        
+        setLocation(info.getX(), info.getY());
         //try to get a chicken object
         chicken = (Chicken)getOneIntersectingObject(Chicken.class);
         getWorld().showText(""+chicken, 100,100);
@@ -52,6 +55,10 @@ public class MouseCursor extends Actor
                 lastChicken = null;
             }
         }
-;
+        /*
+        if(chicken != null && info.getButton()== 0){
+            chicken.hit();
+        }
+        */
     }
 }
